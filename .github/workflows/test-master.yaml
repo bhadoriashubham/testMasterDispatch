@@ -1,0 +1,11 @@
+name: Test Event
+
+on: [repository_dispatch]
+
+jobs:
+  trigger-override:
+    name: Trigger test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        run: echo "------test it-----"
